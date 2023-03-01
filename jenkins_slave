@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo "Hello from Slave ${params.NAME} of ${params.Ages}"
                 sh "python myscript.py ${params.NAME} --age ${params.Ages}"
-                echo "Successful"
+                echo "Successfully!!"
             }
         }
     }
